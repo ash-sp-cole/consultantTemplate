@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Header from "../Header";
+import MainBox from '../MainBox';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,6 +36,7 @@ export default function Home() {
                     }}
 
                 >
+                    
                    <Header/> 
                 </Grid>
 
@@ -46,14 +48,9 @@ export default function Home() {
 
                     }}
                 >
-                    <Paper className={classes.paper}
-                        style={{
-                            height: ' 95%',
-                            margin: 'auto'
+                   
+                        <MainBox/>
 
-                        }}
-
-                    >MAIN BOX</Paper>
                 </Grid>
 
 
@@ -73,6 +70,7 @@ export default function Home() {
                             margin: 'auto'
 
                         }}
+                        elevation ={20}
                     >BOTTOM LEFT</Paper>
                 </Grid>
 
@@ -93,6 +91,7 @@ export default function Home() {
                             margin: 'auto'
 
                         }}
+                        elevation ={20}
                     >BOTTOM RIGHT</Paper>
                 </Grid>
 

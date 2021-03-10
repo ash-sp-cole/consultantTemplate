@@ -4,10 +4,14 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import MainCard from './MainCard';
 import BannerImage from '../Image/Banner';
+import HorizontalLinearStepper from '../Stepper';
+import FloatingActionButtons from '../LeftBoxMain';
+import MediaFeed from '../MediaFeed';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    margin:'auto'
   },
   paper: {
     padding: theme.spacing(2),
@@ -24,23 +28,36 @@ export default function MainBox() {
       <Grid container spacing={3}
    
       >
-        <Grid item xs={12}
+        <Grid item xs={12} 
+        style={{margin:'auto'}}
+      >
+            <FloatingActionButtons/>
+      
+        </Grid>
+        <Grid item xs={12} sm={6}
       
       >
-          <Paper className={classes.paper}
-          elevation={7}
-         
-          >
+            <MediaFeed/>
+      
+        </Grid>
+        <Grid item xs={12} sm={6}
+      
+      >
             <MainCard/>
-         
-          </Paper>
-        </Grid>
-    
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+          <Paper className={classes.paper}>
+            
+     
+            
+            
+            </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}
+            elevation={12}
+          ><HorizontalLinearStepper/></Paper>
         </Grid>
       
       

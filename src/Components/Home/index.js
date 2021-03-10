@@ -43,7 +43,7 @@ export default function Home() {
 
                 <Grid item xs={12}
                     style={{
-                        height: ' 55%',
+                        height: ' 85%',
                         margin: 'auto'
 
                     }}
@@ -54,46 +54,6 @@ export default function Home() {
                 </Grid>
 
 
-
-                <Grid item xs={12} sm={6}
-                    style={{
-                        height: ' 20%',
-                        margin: 'auto'
-
-                    }}
-
-
-                >
-                    <Paper className={classes.paper}
-                        style={{
-                            height: ' 95%',
-                            margin: 'auto'
-
-                        }}
-                        elevation ={20}
-                    >BOTTOM LEFT</Paper>
-                </Grid>
-
-
-
-                <Grid item xs={12} sm={6}
-                    style={{
-                        height: ' 20%',
-                        margin: 'auto'
-
-                    }}
-
-
-                >
-                    <Paper className={classes.paper}
-                        style={{
-                            height: ' 95%',
-                            margin: 'auto'
-
-                        }}
-                        elevation ={20}
-                    >BOTTOM RIGHT</Paper>
-                </Grid>
 
 
             </Grid>

@@ -20,7 +20,9 @@ import logo from "../../Components/Heyoka.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 545,
-    margin:'auto'
+    margin:'auto',
+    borderRadius:'25px',
+    
   },
   media: {
     height: 0,
@@ -50,7 +52,9 @@ export default function MainCard() {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root}
+    elevation={14}
+    >
       <CardHeader
       
         action={

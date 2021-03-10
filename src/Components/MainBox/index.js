@@ -42,7 +42,7 @@ export default function MainBox() {
             <MediaFeed/>
       
         </Grid>
-        <Grid item xs={12} sm={6}
+        <Grid item xs={12} sm={4}
       
       >
             <MainCard/>
@@ -50,14 +50,14 @@ export default function MainBox() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
-            
-      <ButtonBases/>
+          <HorizontalLinearStepper/>
+      {/* <ButtonBases/> */}
             </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}
+          {/* <Paper className={classes.paper}
             elevation={12}
-          ><HorizontalLinearStepper/></Paper>
+          ></Paper> */}
         </Grid>
       
       

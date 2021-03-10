@@ -48,12 +48,6 @@ const messages = [
     primary: 'Yes!',
     secondary: 'I have the tickets to the ReactConf for this year.',
     person: '/static/images/avatar/3.jpg',
-  },
-  {
-    id: 5,
-    primary: "Doctor's Appointment",
-    secondary: 'My appointment for the doctor was rescheduled for next Saturday.',
-    person: '/static/images/avatar/4.jpg',
   }
  
 ];
@@ -95,7 +89,7 @@ export default function MediaFeed() {
     <React.Fragment>
       <CssBaseline />
       <Paper square className={classes.paper}
-      elevation={10}
+      elevation={14}
       >
         <Typography className={classes.text} variant="h5" gutterBottom>
           Your Feed

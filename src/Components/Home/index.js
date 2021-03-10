@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Header from "../Header";
 import MainBox from '../MainBox';
+import "../../App.css";
 
 const useStyles = makeStyles((theme) => ({
     root: {

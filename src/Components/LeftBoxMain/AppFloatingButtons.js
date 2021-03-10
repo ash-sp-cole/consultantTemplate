@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function FloatingActionButtons() {
+export default function FloatingAppButtons() {
   const classes = useStyles();
 
   return (
@@ -30,10 +30,7 @@ export default function FloatingActionButtons() {
       <Fab color="secondary" aria-label="edit">
         <EditIcon />
       </Fab>
-      <Fab variant="extended">
-        <NavigationIcon className={classes.extendedIcon} />
-        Navigate
-      </Fab>
+ 
    
     </div>
   );

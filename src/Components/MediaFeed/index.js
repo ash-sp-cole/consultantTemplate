@@ -18,6 +18,8 @@ import AddIcon from '@material-ui/icons/Add';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from "../../Components/Heyoka.png";
+import FloatingActionButtons from '../LeftBoxMain';
+import FloatingAppButtons from '../LeftBoxMain/AppFloatingButtons';
 
 
 
@@ -115,16 +117,12 @@ export default function MediaFeed() {
       </Paper>
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="open drawer">
-            <MenuIcon />
-          </IconButton>
-          <Fab color="secondary" aria-label="add" className={classes.fabButton}>
-            <AddIcon />
-          </Fab>
+        
+          <div color="secondary" aria-label="add" className={classes.fabButton}>
+            <FloatingAppButtons/>
+          </div>
           <div className={classes.grow} />
-          <IconButton color="inherit">
-            <SearchIcon />
-          </IconButton>
+          
           <IconButton edge="end" color="inherit">
             <MoreIcon />
           </IconButton>

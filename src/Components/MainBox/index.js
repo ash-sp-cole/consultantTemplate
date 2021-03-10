@@ -7,6 +7,8 @@ import BannerImage from '../Image/Banner';
 import HorizontalLinearStepper from '../Stepper';
 import FloatingActionButtons from '../LeftBoxMain';
 import MediaFeed from '../MediaFeed';
+import ButtonBases from "../Gallery";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,9 +51,7 @@ export default function MainBox() {
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
             
-     
-            
-            
+      <ButtonBases/>
             </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>

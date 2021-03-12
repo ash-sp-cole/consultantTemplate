@@ -5,6 +5,8 @@ import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import NavigationIcon from '@material-ui/icons/Navigation';
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,15 +26,13 @@ export default function FloatingActionButtons() {
 
   return (
     <div className={classes.root}>
-      <Fab color="primary" aria-label="add">
-        <AddIcon />
-      </Fab>
+   
       <Fab color="secondary" aria-label="edit">
-        <EditIcon />
+        <MenuIcon/>
       </Fab>
       <Fab variant="extended">
         <NavigationIcon className={classes.extendedIcon} />
-        Navigate
+        Explore Heyoka
       </Fab>
    
     </div>

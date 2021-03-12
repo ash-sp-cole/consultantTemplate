@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MainBox() {
   const classes = useStyles();
-  const [count, setCount] = useState(0);
+  const [menuSelectionHook, setMenuProp] = useState("home");
   return (
     <div className={classes.root}>
       <Grid container spacing={3}
@@ -46,12 +46,12 @@ export default function MainBox() {
           <div className={classes.root}>
 
             <Fab color="secondary" aria-label="edit"
-            onClick={() => setCount(count + 1)}
+            onClick={() => setMenuProp("fab")}
             >
               <MenuIcon />
             </Fab>
             <Fab variant="extended"
-            onClick={() => setCount(count - 1)}
+            onClick={() => setMenuProp("explore")}
             >
               <NavigationIcon className={classes.extendedIcon} />
         Explore Heyoka!
@@ -65,7 +65,7 @@ export default function MainBox() {
         >
          <DisplayBoxFrame
          
-         menuSelection={count}
+         menuSelection={menuSelectionHook}
 
          />
 
